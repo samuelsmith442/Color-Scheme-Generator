@@ -1,0 +1,103 @@
+:root {
+    --background-color: #282c34;
+    --text-color: white;
+    --header-bg-color: #1F2937;
+    --button-bg-color: #3D4B60;
+    --button-hover-bg-color: #374151;
+    --input-bg-color: #1F293A;
+    --input-text-color: #fff;
+    --color-box-text: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--header-bg-color);
+    height: var(--header-height);
+    padding: 1.25rem;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    }
+
+.controls {
+    display: flex;
+    align-items: center;
+}
+
+#color-picker,
+#scheme-mode,
+button {
+    margin-right: 0.625rem; 
+    padding: 0.625rem;
+    cursor: pointer;      
+}
+
+#scheme-mode {
+    color: var(--input-text-color);
+    background: var(--input-bg-color);
+    width: 20rem;
+}
+
+#color-picker {
+    width: 3.1875rem;
+    height: 2.325rem;
+    padding: 0.0625rem;
+}
+
+
+button {
+    color: var(--text-color);
+    background-color: var(--button-bg-color);
+    border: none;
+    border-radius: 0.1875rem;
+}
+
+
+button:hover {
+    background-color: var(--button-hover-bg-color);
+}
+
+.color-scheme {
+    display: flex;
+    justify-content: space-between; /* Distribute space evenly between the boxes */
+    height: 31rem; /* Adjust as needed for the height of the color boxes */
+    width: 100%; /* Ensure it takes up the full width of the page */
+}
+
+.color-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.color-box {
+    flex-grow: 1;
+    height: 100%;
+    width: 100%; /* Ensure it takes full width of the parent */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-box-text);
+    font-weight: bold;
+    text-align: center;
+}
+
+.color-footer {
+    width: 100%;
+    text-align: center;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
